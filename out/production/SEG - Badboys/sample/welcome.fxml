@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="397.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.welcomeTo">
+    <children>
+        <ImageView fitHeight="410.0" fitWidth="652.0" layoutY="-2.0" pickOnBounds="true">
+            <image>
+                <Image url="@../banner.jpg" />
+            </image>
+        </ImageView>
+        <Button fx:id="btnWelcome" layoutX="411.0" layoutY="313.0" mnemonicParsing="false" onAction="#btnWelcome" prefHeight="42.0" prefWidth="124.0" style="-fx-background-color: linear-gradient(#ffd65b, #e68400),        linear-gradient(#ffef84, #f2ba44),        linear-gradient(#ffea6a, #efaa22),        linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),        linear-gradient(from 0% 0% to 15% 50%, rgba(255,255,255,0.9), rgba(255,255,255,0));; -fx-background-radius: 30; -fx-background-insets: 0,1,2,3,0; -fx-text-fill: #654b00; -fx-font-weight: 14px; -fx-padding: 10 20 10 20;" text="Welcome!">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font></Button>
+    </children>
+</Pane>

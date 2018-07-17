@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="541.0" prefWidth="531.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.beliTiketController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="537.0" layoutX="-3.0" pickOnBounds="true">
+         <image>
+            <Image url="@../logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="294.0" fitWidth="283.0" layoutX="130.0" layoutY="164.0" opacity="0.37" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../logoBig.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="87.0" layoutY="192.0" prefHeight="17.0" prefWidth="85.0" text="Keberangkatan" />
+      <Label layoutX="88.0" layoutY="240.0" text="Tujuan" />
+      <Label layoutX="91.0" layoutY="284.0" text="Kelas" />
+      <Label layoutX="90.0" layoutY="325.0" prefHeight="17.0" prefWidth="43.0" text="Trip" />
+      <Button fx:id="btnBeli" layoutX="303.0" layoutY="479.0" mnemonicParsing="false" onAction="#handleBtnBeli" prefHeight="25.0" prefWidth="85.0" text="BELI" />
+      <Button fx:id="btnBatal" layoutX="130.0" layoutY="479.0" mnemonicParsing="false" onAction="#handleBtnBatal" prefHeight="25.0" prefWidth="85.0" text="BATALKAN" />
+      <TextField fx:id="txtKeberangkatan" layoutX="270.0" layoutY="188.0" />
+      <TextField fx:id="txtTujuan" layoutX="271.0" layoutY="236.0" />
+      <TextField fx:id="txtKelas" layoutX="271.0" layoutY="280.0" />
+      <TextField fx:id="txtTrip" layoutX="271.0" layoutY="321.0" />
+      <ComboBox fx:id="cboDewasa" layoutX="69.0" layoutY="412.0" prefHeight="25.0" prefWidth="110.0">
+              <items>
+                 <FXCollections fx:factory="observableArrayList">
+                 <String fx:value="1" />
+                 <String fx:value="2" />
+                 <String fx:value="3" />
+                 <String fx:value="4" />
+                 <String fx:value="5" />
+                 <String fx:value="6" />
+                 <String fx:value="7" />
+                 <String fx:value="8" />
+                 <String fx:value="9" />
+                 </FXCollections>
+              </items>
+      <value>
+         <String fx:value="1" />
+      </value>
+      </ComboBox>
+      <ComboBox fx:id="cboAnak" layoutX="213.0" layoutY="412.0" prefHeight="25.0" prefWidth="110.0">
+              <items>
+                 <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="0" />
+                    <String fx:value="1" />
+                    <String fx:value="2" />
+                    <String fx:value="3" />
+                    <String fx:value="4" />
+                    <String fx:value="5" />
+                    <String fx:value="6" />
+                    <String fx:value="7" />
+                 </FXCollections>
+              </items>
+
+            <value>
+               <String fx:value="0"/>
+            </value>
+      </ComboBox>
+      <ComboBox fx:id="cboBayi" layoutX="353.0" layoutY="412.0" prefHeight="25.0" prefWidth="110.0">
+              <items>
+                 <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="0" />
+                    <String fx:value="1" />
+                    <String fx:value="2" />
+                 </FXCollections>
+              </items>
+      <value>
+         <String fx:value="0"/>
+      </value>
+      </ComboBox>
+      <Label layoutX="99.0" layoutY="385.0" text="Dewasa" />
+      <Label layoutX="237.0" layoutY="385.0" text="Anak - anak" />
+      <Label layoutX="397.0" layoutY="385.0" text="Bayi" />
+      <Label layoutX="91.0" layoutY="360.0" text="Harga/tiket" />
+      <TextField fx:id="txtPrice" layoutX="270.0" layoutY="356.0" />
+   </children>
+</AnchorPane>

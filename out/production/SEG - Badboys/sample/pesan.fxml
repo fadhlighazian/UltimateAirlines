@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+
+<AnchorPane prefHeight="523.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.pesanController">
+   <children>
+      <Label layoutX="60.0" layoutY="346.0" text="Bayi" />
+      <Button fx:id="btnBeli" layoutX="264.0" layoutY="423.0" mnemonicParsing="false" onAction="#handleBtnBeli" prefHeight="25.0" prefWidth="74.0" text="Beli" />
+      <Button layoutX="115.0" layoutY="423.0" mnemonicParsing="false" text="Batalkan" />
+      <TextField fx:id="txtDewasa" layoutX="226.0" layoutY="247.0" promptText="1 Dewasa" />
+      <TextField fx:id="txtAnak" layoutX="226.0" layoutY="293.0" promptText="0 Anak - anak" />
+      <TextField fx:id="txtBayi" layoutX="226.0" layoutY="342.0" promptText="0 Bayi" />
+      <Label layoutX="51.0" layoutY="251.0" text="Dewasa" />
+      <Label layoutX="92.0" layoutY="198.0" text="Berapa banyak tiket yang anda ingin beli ?" />
+      <Label layoutX="52.0" layoutY="297.0" text="Anak - anak" />
+      <ImageView fitHeight="170.0" fitWidth="426.0" pickOnBounds="true">
+         <image>
+            <Image url="@../header.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
